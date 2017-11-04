@@ -10,3 +10,10 @@ say_hello "Welcome to ruby basic practices"
 say_hello "I can print anything"
 
 # arguments are inputs that the method can take in to proccess
+###################################################################
+
+def multiply(first_number, second_number)
+    first_number.to_f * second_number.to_f
+end
+
+puts multiply(5, 10)
