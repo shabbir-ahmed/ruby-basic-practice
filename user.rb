@@ -1,5 +1,4 @@
 class User
-    
     attr_accessor :name, :email
     
     def initialize(name, email)
@@ -20,12 +19,23 @@ class User
     end
 end
 
+class Buyer < User
+    
+end
+
+class Seller < User
+    
+end
+
+class Admin < User
+    
+end
+
 user = User.new("Shabbir", "shabbir@gmail.com")
 puts "My username is #{user.name} and my email is #{user.email}"
-# user1 = User.new("Ahmed")
-
-# puts User.ancestors
 user.name = "John"
 user.email = "example.com"
-
 puts "My new username is #{user.name} and my email is #{user.email}"
+
+buyer1 = Buyer.new("John Doe", "john@example.com")
+buyer1.run
