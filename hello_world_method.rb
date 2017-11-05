@@ -17,3 +17,26 @@ def multiply(first_number, second_number)
 end
 
 puts multiply(5, 10)
+
+# get user inputs
+prompt = gets.chomp
+
+puts "Enter your first number"
+first_number = gets.chomp
+puts "Enter your second number"
+second_number = gets.chomp
+
+if prompt == '1' #condition 1
+    #execute logic 1
+    puts "You have chosen to #{first_number} #{second_number} multiply"
+elsif prompt == '2' #condition 2
+    #execute logic '2'
+    puts "You have chosen to devide"
+elsif prompt == '3'
+    puts "You have chosen to substract"
+elsif prompt == '4'
+    puts "You have chosen to find the remainder"
+else
+    #execute logic 
+    puts "You have made an invalid choice"
+end
