@@ -18,7 +18,7 @@ class User
         @name = name
     end
 end
-
+# Inheritence
 class Buyer < User
     
 end
